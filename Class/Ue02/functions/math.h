@@ -1,0 +1,1 @@
+extern double twice(double x);

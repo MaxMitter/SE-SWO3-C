@@ -1,0 +1,1 @@
+gcc -std=c11 -Wall -Wconversion -Wextra -Wpedantic -Werror=vla -o c_experiments c_experiments.c && ./c_experiments

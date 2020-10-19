@@ -1,0 +1,1 @@
+gcc -std=c11 -Wall -Wconversion -Wextra -Wpedantic -Werror=vla -o max_rec max_rec.c && ./max_rec

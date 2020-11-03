@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/prg.dir/prg/geo.c.o CMakeFiles/prg.dir/prg/prg.c.o CMakeFiles/prg.dir/prg/weight.c.o  -o bin/prg  -lm 

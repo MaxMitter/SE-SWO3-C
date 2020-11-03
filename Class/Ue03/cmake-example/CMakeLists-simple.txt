@@ -1,0 +1,11 @@
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+
+file(GLOB SRC prg/*.c)
+
+add_executable(prg ${SRC})
+
+if ("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU")
+    target_compile_options(prg PRIVATE -Wall -Wextra -Werror=vla)
+endif()

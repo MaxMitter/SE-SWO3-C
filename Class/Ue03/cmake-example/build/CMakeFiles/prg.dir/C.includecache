@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/c-code/Class/Ue03/cmake-example/prg/geo.c
+geo.h
+/workspaces/c-code/Class/Ue03/cmake-example/prg/geo.h
+
+/workspaces/c-code/Class/Ue03/cmake-example/prg/geo.h
+
+/workspaces/c-code/Class/Ue03/cmake-example/prg/prg.c
+stdio.h
+-
+geo.h
+/workspaces/c-code/Class/Ue03/cmake-example/prg/geo.h
+weight.h
+/workspaces/c-code/Class/Ue03/cmake-example/prg/weight.h
+
+/workspaces/c-code/Class/Ue03/cmake-example/prg/weight.c
+weight.h
+/workspaces/c-code/Class/Ue03/cmake-example/prg/weight.h
+geo.h
+/workspaces/c-code/Class/Ue03/cmake-example/prg/geo.h
+
+/workspaces/c-code/Class/Ue03/cmake-example/prg/weight.h
+

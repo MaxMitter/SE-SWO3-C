@@ -1,0 +1,3 @@
+/workspaces/c-code/Class/Ue03/nqueens/build/CMakeFiles/edit_cache.dir
+/workspaces/c-code/Class/Ue03/nqueens/build/CMakeFiles/rebuild_cache.dir
+/workspaces/c-code/Class/Ue03/nqueens/build/CMakeFiles/nqueens.dir

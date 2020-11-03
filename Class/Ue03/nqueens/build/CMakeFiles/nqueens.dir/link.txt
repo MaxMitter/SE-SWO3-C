@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/nqueens.dir/nqueens/nqueens.c.o  -o bin/nqueens  -lm 

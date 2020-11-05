@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 #define bool  int
 #define false 0
@@ -129,9 +130,17 @@ int main(int argc, char const *argv[])
                                 0, 0, 0, 3, 0, 2, 8, 0, 0, 9, 3, 0, 0, 0, 7, 4, 0, 4, 0, 0, 5, 0, 0, 3, 6, 7, 0, 3, 0, 1, 8, 0, 0, 0};
     int test3[SUDOKU_SIZE] = {0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 3, 0, 7, 4, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 8, 0, 0, 4, 0, 0, 1, 0, \
                                 6, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 7, 8, 0, 5, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0};
+    clock_t time_before, time_after;
+    
     print_sudoku(test3);
 
+    time_before = clock();
     sudoku(test3);
+    time_after = clock();
     print_sudoku(test3);
+
+    double duration = 1000.0*(time_after - time_before)/CLOCKS_PER_SEC;
+
+    printf("Time taken: %.2f ms\n", duration);
     return 0;
 }

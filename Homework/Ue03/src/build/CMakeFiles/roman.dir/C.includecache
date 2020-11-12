@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/Code/Homework/Ue03/src/roman/roman.h
+
+/workspaces/Code/Homework/Ue03/src/roman/test.c
+roman.h
+/workspaces/Code/Homework/Ue03/src/roman/roman.h
+

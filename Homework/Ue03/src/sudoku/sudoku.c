@@ -26,8 +26,6 @@ bool solve_sudoku(int problem[], int start_point) {
                     problem[i] = j;
                     if (solve_sudoku(problem, i + 1))
                         return true;
-                    else
-                        continue;
                 } else
                     problem[i] = 0;
             }
@@ -122,25 +120,41 @@ void print_sudoku(int problem[]) {
     }
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
-    int problem[SUDOKU_SIZE] = { 0, 0, 4, 0, 0, 0, 0, 6, 7, 3, 0, 0, 4, 7, 0, 0, 0, 5, 1, 5, 0, 8, 2, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 3, 1, 8, 0, 2, 1, 0, 5, 6, 0, 4, \
+    int sudoku_easy[SUDOKU_SIZE] = { 0, 0, 4, 0, 0, 0, 0, 6, 7, 3, 0, 0, 4, 7, 0, 0, 0, 5, 1, 5, 0, 8, 2, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 3, 1, 8, 0, 2, 1, 0, 5, 6, 0, 4, \
                                 4, 1, 0, 0, 0, 0, 9, 0, 0, 7, 0, 0, 0, 8, 0, 0, 4, 6, 6, 0, 0, 0, 1, 2, 0, 0, 0, 9, 3, 0, 0, 0, 0, 7, 1, 0};
-    int test2[SUDOKU_SIZE] = {0, 0, 0, 2, 6, 0, 7, 0, 1, 6, 8, 0, 0, 7, 0, 0, 9, 0, 1, 9, 0, 0, 0, 4, 5, 0, 0, 8, 2, 0, 1, 0, 0, 0, 4, 0, 0, 0, 4, 6, 0, 2, 9, 0, 0, 0, 5, \
+    int sudoku_medium[SUDOKU_SIZE] = {0, 0, 0, 2, 6, 0, 7, 0, 1, 6, 8, 0, 0, 7, 0, 0, 9, 0, 1, 9, 0, 0, 0, 4, 5, 0, 0, 8, 2, 0, 1, 0, 0, 0, 4, 0, 0, 0, 4, 6, 0, 2, 9, 0, 0, 0, 5, \
                                 0, 0, 0, 3, 0, 2, 8, 0, 0, 9, 3, 0, 0, 0, 7, 4, 0, 4, 0, 0, 5, 0, 0, 3, 6, 7, 0, 3, 0, 1, 8, 0, 0, 0};
-    int test3[SUDOKU_SIZE] = {0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 3, 0, 7, 4, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 8, 0, 0, 4, 0, 0, 1, 0, \
+    int sudoku_hard[SUDOKU_SIZE] = {0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 3, 0, 7, 4, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 8, 0, 0, 4, 0, 0, 1, 0, \
                                 6, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 7, 8, 0, 5, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0};
     clock_t time_before, time_after;
     
-    print_sudoku(test3);
-
+    // Test Easy Sudoku //
+    print_sudoku(sudoku_easy);
     time_before = clock();
-    sudoku(test3);
+    sudoku(sudoku_easy);
     time_after = clock();
-    print_sudoku(test3);
-
+    print_sudoku(sudoku_easy);
     double duration = 1000.0*(time_after - time_before)/CLOCKS_PER_SEC;
+    printf("Time taken: %.2f ms\n", duration);
 
+    // Test Medium Sudoku //
+    print_sudoku(sudoku_medium);
+    time_before = clock();
+    sudoku(sudoku_medium);
+    time_after = clock();
+    print_sudoku(sudoku_medium);
+    duration = 1000.0*(time_after - time_before)/CLOCKS_PER_SEC;
+    printf("Time taken: %.2f ms\n", duration);
+
+    // Test Hard Sudoku //
+    print_sudoku(sudoku_hard);
+    time_before = clock();
+    sudoku(sudoku_hard);
+    time_after = clock();
+    print_sudoku(sudoku_hard);
+    duration = 1000.0*(time_after - time_before)/CLOCKS_PER_SEC;
     printf("Time taken: %.2f ms\n", duration);
     return 0;
 }

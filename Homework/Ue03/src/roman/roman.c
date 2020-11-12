@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_LEN 50
+#include "roman.h"
 
-int roman_to_decimal(char const r[]);
-void decimal_to_roman(int d, char r[]);
+#define MAX_LEN 50
 
 int roman_to_decimal(char const r[]){
     int max = (int)strlen(r);
@@ -154,20 +153,6 @@ void decimal_to_roman(int d, char r[]) {
             val -= 1;
         }
     }
-}
 
-int main(int argc, char const *argv[])
-{
-    char numb[] = {'M', 'C', 'M', 'L', 'X', 'V', '\0'};
-    int num = roman_to_decimal(numb);
-    printf("Test XC: %d\n", num);
-    printf("Test XC: %d\n", roman_to_decimal("MCMLXV\0"));
-    char r[MAX_LEN];
-
-    for (int i = 0; i < MAX_LEN; i++)
-        r[i] = '\0';
-
-    decimal_to_roman(1965, r);
-    printf("Test number: %s\n", r);
-    return 0;
+    strncat(r, "\0", 1);
 }

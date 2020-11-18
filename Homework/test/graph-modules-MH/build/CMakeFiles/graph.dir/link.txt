@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/graph.dir/graph/graph_list/graph_list.c.o CMakeFiles/graph.dir/graph/graph_matrix/graph_matrix.c.o CMakeFiles/graph.dir/graph/test.c.o  -o bin/graph 

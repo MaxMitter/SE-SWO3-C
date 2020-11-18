@@ -1,0 +1,3 @@
+/workspaces/c-code/Homework/test/graph-modules-MH/build/CMakeFiles/rebuild_cache.dir
+/workspaces/c-code/Homework/test/graph-modules-MH/build/CMakeFiles/edit_cache.dir
+/workspaces/c-code/Homework/test/graph-modules-MH/build/CMakeFiles/graph.dir

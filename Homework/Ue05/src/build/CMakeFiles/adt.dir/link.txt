@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o CMakeFiles/adt.dir/adt/test.c.o  -o bin/adt 

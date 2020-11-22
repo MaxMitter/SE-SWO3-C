@@ -4,13 +4,21 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-void print_graph_list(graph_list *list){
+void print_vertex_list(list* vertex_list) {
+    list list_iterator = *vertex_list;
+    while (list_iterator != NULL) {
+        printf("%s -> ", list_iterator->value);
+        list_iterator = list_iterator->next;
+    }
+}
+
+void print_graph_list(graph_list *list) {
     printf("Printing Graph List:\n");
     graph_list list_iterator = *list;
     while (list_iterator != NULL) {
         printf("'%s' | V: ", list_iterator->value);
 
-        //TODO print vertices
+        print_vertex_list(&(list_iterator->vertex_list));
         printf("\n");
         list_iterator = list_iterator->next;
     }
@@ -45,7 +53,7 @@ void append_list (graph_list* list, graph_list_element* node) {
     }
 }
 
-bool node_in_graph(graph_list *list, char *value) {
+bool node_in_graph_list(graph_list *list, char *value) {
     graph_list node_iterator = *list;
     while (node_iterator != NULL) {
         if (!strcmp(node_iterator->value, value)) {
@@ -56,20 +64,85 @@ bool node_in_graph(graph_list *list, char *value) {
     return false;
 }
 
-void add_graph_node_list(graph_list *list, char *value) {
-    if (!node_in_graph(list, value))
+void add_node_to_graph_list(graph_list *list, char *value) {
+    if (!node_in_graph_list(list, value))
         append_list(list, new_node_list(value));
     else
         printf("Node '%s' already in graph!\n", value);
 }
 
+void remove_vertex_from_list(list* vertex_list, char* value) {
+    list list_iterator = *vertex_list;
+    list_element *prev = NULL;
+    while (list_iterator != NULL) {
+        if (!strcmp(list_iterator->value, value))
+            break;
+        prev = list_iterator;
+        list_iterator = list_iterator->next;
+    }
+
+    if (list_iterator != NULL) {
+        if (prev != NULL)
+            prev->next = list_iterator->next;
+        else
+            *vertex_list = list_iterator->next;
+    }
+
+    free(list_iterator);
+}
+
+graph_list_element* get_node(graph_list *graph, char* value) {
+    if (*graph == NULL) {
+        graph_list list_iterator = *graph;
+        while (list_iterator != NULL) {
+            if (!strcmp(list_iterator->value, value))
+                break;
+
+            list_iterator = list_iterator->next;
+        }
+
+        if (list_iterator != NULL) {
+            return list_iterator;
+        }
+    }
+}
+
+void remove_vertex_list(graph_list* graph, char* source_node, char* target_node) {
+    if (!strcmp(source_node, target_node)){
+        printf("Source Node and Target Node have to be different!\n");
+        return;
+    }
+    
+    if (!node_in_graph_list(graph, source_node)) {
+        printf("Source Node '%s' does not exist!", source_node);
+    } else {
+        if (!node_in_graph_list(graph, target_node)) {
+            printf("Target Node '%s' does not exist!", target_node);
+        } else {
+            if (vertex_in_node_list(&((*graph)->vertex_list), target_node)) {
+                graph_list_element *node = get_node(graph, source_node);
+                remove_vertex_from_list(&(node->vertex_list), target_node);
+            }
+            else
+                printf("Vertex '%s -> %s' does not exist.", source_node, target_node);
+        }
+    }
+}
+
 void remove_node_from_graph_list(graph_list* list, char* value) {
-    if (node_in_graph(list, value)) {
+    if (node_in_graph_list(list, value)) {
         graph_list list_iterator = *list;
         graph_list_element *prev = NULL;
         while (list_iterator != NULL) {
             if(!strcmp(list_iterator->value, value))
                 break;
+
+            if (list_iterator->vertex_list != NULL) {
+                if (vertex_in_node_list(&(list_iterator->vertex_list), value)) {
+                    remove_vertex_from_list(&(list_iterator->vertex_list), value);
+                }
+            }
+
             prev = list_iterator;
             list_iterator = list_iterator->next;
         }
@@ -80,21 +153,91 @@ void remove_node_from_graph_list(graph_list* list, char* value) {
             else
                 *list = list_iterator->next;
             
+            if (list_iterator->vertex_list != NULL)
+                free_vertex_list(&(list_iterator->vertex_list));
             free(list_iterator);
         }
     } else
         printf("Node '%s' could not be removed: Node not found!", value);
 }
 
+void free_vertex_list(list* vertex_list) {
+    if (*vertex_list != NULL) {
+        list n = *vertex_list;
+        if (n->next != NULL)
+            free_vertex_list(&(n->next));
+        free(n);
+        *vertex_list = NULL;
+    }
+}
+
 void free_graph_list(graph_list *list) {
     graph_list n = *list;
     if (n->next != NULL)
         free_graph_list(&(n->next));
-    //TODO free vertices
+
+    free_vertex_list(&(n->vertex_list));
     free(n);
     *list = NULL;
 }
 
-void add_vertex_list(graph_list* list, char* source_node, char* target_node) {
+list_element* new_vertex_list(char* target) {
+    list_element *node = malloc(sizeof(list_element));
+    if (node == NULL) {
+        printf("Memory allocation error while adding Vertex '%s', aborting.", target);
+        exit;
+    }
+    node->value = malloc((strlen(target) + 1) * sizeof(char));
+    strcpy(node->value, target);
+    node->next = NULL;
+    return node;
+}
 
+bool vertex_in_node_list(list* vertex_list, char* target) {
+    if (vertex_list != NULL) {
+        list list_iterator = *vertex_list;
+        while (list_iterator != NULL) {
+            if (!strcmp(list_iterator->value, target))
+                return true;
+            list_iterator = list_iterator->next;
+        }
+    }
+    return false;
+}
+
+void append_vertex_list(list* vertex_list, list_element* node) {
+    if (vertex_list == NULL) {
+        vertex_list = node;
+    }
+    list list_iterator = *vertex_list;
+    if (list_iterator == NULL)
+        *vertex_list = node;
+    else {
+        while (list_iterator->next != NULL)
+            list_iterator = list_iterator->next;
+        
+        list_iterator->next = node;
+    }
+}
+
+void add_vertex_list(graph_list* list, char* source_node, char* target_node) {
+    if (!strcmp(source_node, target_node)){
+        printf("Source Node and Target Node have to be different!\n");
+        return;
+    }
+    
+    if (!node_in_graph_list(list, source_node)) {
+        printf("Source Node '%s' does not exist!", source_node);
+    } else {
+        if (!node_in_graph_list(list, target_node)) {
+            printf("Target Node '%s' does not exist!", target_node);
+        } else {
+            if (!vertex_in_node_list(&((*list)->vertex_list), target_node)) {
+                graph_list_element *node = get_node(list, source_node);
+                append_vertex_list(&(node->vertex_list), new_vertex_list(target_node));
+            }
+            else
+                printf("Vertex '%s -> %s' already exists.", source_node, target_node);
+        }
+    }
 }

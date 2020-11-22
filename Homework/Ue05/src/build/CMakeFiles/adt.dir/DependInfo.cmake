@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.c" "/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o"
-  "/workspaces/c-code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c" "/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o"
-  "/workspaces/c-code/Homework/Ue05/src/adt/test.c" "/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles/adt.dir/adt/test.c.o"
+  "/workspaces/Code/Homework/Ue05/src/adt/graph_list/graph_list.c" "/workspaces/Code/Homework/Ue05/src/build/CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o"
+  "/workspaces/Code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c" "/workspaces/Code/Homework/Ue05/src/build/CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o"
+  "/workspaces/Code/Homework/Ue05/src/adt/test.c" "/workspaces/Code/Homework/Ue05/src/build/CMakeFiles/adt.dir/adt/test.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

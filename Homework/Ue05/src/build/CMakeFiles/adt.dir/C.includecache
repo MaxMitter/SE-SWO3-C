@@ -6,29 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/workspaces/c-code/Homework/Ue05/src/adt/graph.h
+/workspaces/Code/Homework/Ue05/src/adt/graph.h
 ./graph_list/graph_list.h
-/workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.h
+/workspaces/Code/Homework/Ue05/src/adt/graph_list/graph_list.h
 ./graph_matrix/graph_matrix.h
-/workspaces/c-code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.h
+/workspaces/Code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.h
 
-/workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.c
-./graph_list.h
-/workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.h
-stdio.h
--
-stdlib.h
--
-stddef.h
--
+/workspaces/Code/Homework/Ue05/src/adt/graph_list/graph_list.h
 
-/workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.h
+/workspaces/Code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.h
 
-/workspaces/c-code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.h
-
-/workspaces/c-code/Homework/Ue05/src/adt/test.c
+/workspaces/Code/Homework/Ue05/src/adt/test.c
 stdio.h
 -
 ./graph.h
-/workspaces/c-code/Homework/Ue05/src/adt/graph.h
+/workspaces/Code/Homework/Ue05/src/adt/graph.h
 

@@ -21,9 +21,12 @@
     } graph_list_element;
 
     void init_graph_list(graph_list* list);
-    void add_graph_node_list(graph_list* list, char *value);
+    void add_node_to_graph_list(graph_list *list, char *value);
     void print_graph_list(graph_list* list);
     void free_graph_list(graph_list* list);
     void remove_node_from_graph_list(graph_list* list, char* value);
-
+    bool node_in_graph_list(graph_list* list, char* value);
+    void add_vertex_list(graph_list* list, char* source_node, char* target_node);
+    bool vertex_in_node_list(list* vertex_list, char* target);
+    void remove_vertex_list(graph_list* graph, char* source_node, char* target_node);
 #endif

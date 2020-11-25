@@ -16,7 +16,7 @@
     typedef struct graph_list_element* graph_list;
     typedef struct graph_list_element {
         char* value;
-        list vertex_list;
+        list edge_list;
         graph_list next;
     } graph_list_element;
 
@@ -26,7 +26,7 @@
     void free_graph_list(graph_list* list);
     void remove_node_from_graph_list(graph_list* list, char* value);
     bool node_in_graph_list(graph_list* list, char* value);
-    void add_vertex_list(graph_list* list, char* source_node, char* target_node);
-    bool vertex_in_node_list(list* vertex_list, char* target);
-    void remove_vertex_list(graph_list* graph, char* source_node, char* target_node);
+    void add_edge_list(graph_list* list, char* source_node, char* target_node);
+    bool edge_in_node_list(list* edge_list, char* target);
+    void remove_edge_list(graph_list* graph, char* source_node, char* target_node);
 #endif

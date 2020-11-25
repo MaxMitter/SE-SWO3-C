@@ -1,0 +1,10 @@
+prefix=C:/Users/mfh/Desktop/VCPKG/packages/libjpeg-turbo_x64-windows/debug
+exec_prefix=C:/Users/mfh/Desktop/VCPKG/packages/libjpeg-turbo_x64-windows/debug
+libdir=C:/Users/mfh/Desktop/VCPKG/packages/libjpeg-turbo_x64-windows/debug/lib
+includedir=C:/Users/mfh/Desktop/VCPKG/packages/libjpeg-turbo_x64-windows/debug/include
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 2.0.3
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}

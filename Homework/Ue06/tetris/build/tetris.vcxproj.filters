@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\current_block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_board.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tetris\figures.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\current_block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_board.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tetris\figures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{69C83CCF-6E72-3412-BE91-3805F658CE46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{56FA1E01-85F6-3391-9821-41DEC22308D3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/Code/Homework/Ue05/src
+CMAKE_SOURCE_DIR = /workspaces/c-code/Homework/Ue05/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/Code/Homework/Ue05/src/build
+CMAKE_BINARY_DIR = /workspaces/c-code/Homework/Ue05/src/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/adt.dir/clean
 CMakeFiles/adt.dir/all:
 	$(MAKE) -f CMakeFiles/adt.dir/build.make CMakeFiles/adt.dir/depend
 	$(MAKE) -f CMakeFiles/adt.dir/build.make CMakeFiles/adt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/Code/Homework/Ue05/src/build/CMakeFiles --progress-num=1,2,3,4 "Built target adt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles --progress-num=1,2,3,4 "Built target adt"
 .PHONY : CMakeFiles/adt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/adt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Code/Homework/Ue05/src/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-code/Homework/Ue05/src/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/adt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Code/Homework/Ue05/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-code/Homework/Ue05/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/adt.dir/rule
 
 # Convenience name for target.

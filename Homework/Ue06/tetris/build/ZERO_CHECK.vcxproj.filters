@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\build\CMakeFiles\784c1b66b327c20f785580a493ccd95c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A32C7A21-9036-30CC-AB1C-143770AE2539}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

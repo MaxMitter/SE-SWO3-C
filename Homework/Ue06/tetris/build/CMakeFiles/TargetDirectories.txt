@@ -1,0 +1,3 @@
+C:/Users/maxmi/Documents/FH/SWO/c-code/Homework/Ue06/tetris/build/CMakeFiles/tetris.dir
+C:/Users/maxmi/Documents/FH/SWO/c-code/Homework/Ue06/tetris/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/maxmi/Documents/FH/SWO/c-code/Homework/Ue06/tetris/build/CMakeFiles/ZERO_CHECK.dir

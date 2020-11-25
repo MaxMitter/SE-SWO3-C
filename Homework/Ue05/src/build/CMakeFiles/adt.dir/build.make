@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/Code/Homework/Ue05/src
+CMAKE_SOURCE_DIR = /workspaces/c-code/Homework/Ue05/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/Code/Homework/Ue05/src/build
+CMAKE_BINARY_DIR = /workspaces/c-code/Homework/Ue05/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/adt.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/adt.dir/flags.make
 
 CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o: CMakeFiles/adt.dir/flags.make
 CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o: ../adt/graph_list/graph_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o   -c /workspaces/Code/Homework/Ue05/src/adt/graph_list/graph_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/adt.dir/adt/graph_list/graph_list.c.o   -c /workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.c
 
 CMakeFiles/adt.dir/adt/graph_list/graph_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/adt.dir/adt/graph_list/graph_list.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Code/Homework/Ue05/src/adt/graph_list/graph_list.c > CMakeFiles/adt.dir/adt/graph_list/graph_list.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.c > CMakeFiles/adt.dir/adt/graph_list/graph_list.c.i
 
 CMakeFiles/adt.dir/adt/graph_list/graph_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/adt.dir/adt/graph_list/graph_list.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Code/Homework/Ue05/src/adt/graph_list/graph_list.c -o CMakeFiles/adt.dir/adt/graph_list/graph_list.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/c-code/Homework/Ue05/src/adt/graph_list/graph_list.c -o CMakeFiles/adt.dir/adt/graph_list/graph_list.c.s
 
 CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o: CMakeFiles/adt.dir/flags.make
 CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o: ../adt/graph_matrix/graph_matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o   -c /workspaces/Code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o   -c /workspaces/c-code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c
 
 CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c > CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/c-code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c > CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.i
 
 CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c -o CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/c-code/Homework/Ue05/src/adt/graph_matrix/graph_matrix.c -o CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.s
 
 CMakeFiles/adt.dir/adt/test.c.o: CMakeFiles/adt.dir/flags.make
 CMakeFiles/adt.dir/adt/test.c.o: ../adt/test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/adt.dir/adt/test.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/adt.dir/adt/test.c.o   -c /workspaces/Code/Homework/Ue05/src/adt/test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/adt.dir/adt/test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/adt.dir/adt/test.c.o   -c /workspaces/c-code/Homework/Ue05/src/adt/test.c
 
 CMakeFiles/adt.dir/adt/test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/adt.dir/adt/test.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Code/Homework/Ue05/src/adt/test.c > CMakeFiles/adt.dir/adt/test.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/c-code/Homework/Ue05/src/adt/test.c > CMakeFiles/adt.dir/adt/test.c.i
 
 CMakeFiles/adt.dir/adt/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/adt.dir/adt/test.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Code/Homework/Ue05/src/adt/test.c -o CMakeFiles/adt.dir/adt/test.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/c-code/Homework/Ue05/src/adt/test.c -o CMakeFiles/adt.dir/adt/test.c.s
 
 # Object files for target adt
 adt_OBJECTS = \
@@ -110,7 +110,7 @@ bin/adt: CMakeFiles/adt.dir/adt/graph_matrix/graph_matrix.c.o
 bin/adt: CMakeFiles/adt.dir/adt/test.c.o
 bin/adt: CMakeFiles/adt.dir/build.make
 bin/adt: CMakeFiles/adt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/Code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bin/adt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/c-code/Homework/Ue05/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bin/adt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/adt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/adt.dir/clean:
 .PHONY : CMakeFiles/adt.dir/clean
 
 CMakeFiles/adt.dir/depend:
-	cd /workspaces/Code/Homework/Ue05/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/Code/Homework/Ue05/src /workspaces/Code/Homework/Ue05/src /workspaces/Code/Homework/Ue05/src/build /workspaces/Code/Homework/Ue05/src/build /workspaces/Code/Homework/Ue05/src/build/CMakeFiles/adt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspaces/c-code/Homework/Ue05/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/c-code/Homework/Ue05/src /workspaces/c-code/Homework/Ue05/src /workspaces/c-code/Homework/Ue05/src/build /workspaces/c-code/Homework/Ue05/src/build /workspaces/c-code/Homework/Ue05/src/build/CMakeFiles/adt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/adt.dir/depend
 

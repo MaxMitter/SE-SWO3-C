@@ -1,0 +1,22 @@
+﻿  Building Custom Rule C:/Users/maxmi/Documents/FH/SWO/c-code/Homework/Ue06/tetris/CMakeLists.txt
+  figures.c
+  block.c
+  game_board.c
+  game_engine.c
+  main.c
+  timer.c
+  types.c
+..\tetris\figures.c(239,20): warning C4013: 'rand' undefined; assuming extern returning int
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\timer.c(17,20): warning C4047: '=': 'timer_func' differs in levels of indirection from 'timer_func *'
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\figures.c(68): warning C4701: potentially uninitialized local variable 'new_rotation' used
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\figures.c(106): warning C4716: 'fg_new_figure': must return a value
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_board.c(58,15): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(33,37): warning C4047: 'function': 'timer_func *' differs in levels of indirection from 'void (__cdecl *)(void)'
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(33,30): warning C4024: 'timer_start': different types for formal and actual parameter 2
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(68,40): warning C4047: 'function': 'timer_func *' differs in levels of indirection from 'void (__cdecl *)(void)'
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(68,33): warning C4024: 'timer_start': different types for formal and actual parameter 2
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(99,42): warning C4047: 'function': 'timer_func *' differs in levels of indirection from 'void (__cdecl *)(void)'
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(99,35): warning C4024: 'timer_start': different types for formal and actual parameter 2
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(46,72): warning C4100: 'mods': unreferenced formal parameter
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\main.c(46,46): warning C4100: 'scancode': unreferenced formal parameter
+  tetris.vcxproj -> C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\build\bin\Release\tetris.exe

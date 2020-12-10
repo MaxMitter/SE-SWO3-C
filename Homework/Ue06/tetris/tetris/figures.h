@@ -1,7 +1,8 @@
 #ifndef FIGURES_H
+#define FIGURES_H
 
 #include "types.h"
-#include "current_block.h"
+#include "block.h"
 #include <stddef.h>
 #include <assert.h>
 

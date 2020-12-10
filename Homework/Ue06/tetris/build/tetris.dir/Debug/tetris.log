@@ -1,5 +1,3 @@
-﻿  figures.c
-..\tetris\figures.c(177,20): warning C4013: 'rand' undefined; assuming extern returning int
-C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\figures.c(44): warning C4716: 'fg_new_figure': must return a value
-game_engine.obj : error LNK2019: unresolved external symbol fg_rotate_figure referenced in function ge_handle_move
-C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\build\bin\Debug\tetris.exe : fatal error LNK1120: 1 unresolved externals
+﻿  game_board.c
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_board.c(58,15): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  tetris.vcxproj -> C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\build\bin\Debug\tetris.exe

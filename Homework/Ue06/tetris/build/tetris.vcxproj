@@ -383,9 +383,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\tetris\figures.c" />
-    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\current_block.c" />
+    <ClCompile Include="..\tetris\block.c" />
     <ClInclude Include="..\tetris\figures.h" />
-    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\current_block.h" />
+    <ClInclude Include="..\tetris\block.h" />
     <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_board.c" />
     <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_board.h" />
     <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue06\tetris\tetris\game_engine.c" />

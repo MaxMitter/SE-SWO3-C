@@ -1,5 +1,5 @@
 #include "game_engine.h"
-#include "current_block.h"
+#include "block.h"
 #include "game_board.h"
 #include "figures.h"
 
@@ -9,20 +9,12 @@ bool ge_handle_move(int dx, int dy, int turn) {
 	if (game_over)
 		return false;
 
-	/*if (!cb_try_move(dx, dy) && dy == -1) {
-		block current = cb_get_block();
-		gb_add_block(current);
-		current = cb_new_block();
-
-		if (!gb_is_valid_position(current.pos))
-			game_over = true;
-	}*/
-
 	bool succesfull_move = true;
 
 	if (turn == 1) {
-		if (!fg_rotate_figure())
-			succesfull_move = false;
+		if (!fg_try_rotate_figure())
+			succesfull_move = true;
+			
 	}
 	else {
 		if (!fg_try_move(dx, dy) && dy == -1)
@@ -49,4 +41,8 @@ bool ge_handle_move(int dx, int dy, int turn) {
 
 bool ge_is_game_over(void) {
 	return game_over;
+}
+
+void ge_restart(void) {
+	game_over = false;
 }

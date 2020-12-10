@@ -4,7 +4,7 @@
 #include <GLFW/glfw3.h>
 
 #include "types.h"
-#include "current_block.h"
+#include "block.h"
 #include "game_board.h"
 #include "game_engine.h"
 #include "timer.h"
@@ -12,8 +12,10 @@
 
 #define WIDTH  400
 #define HEIGHT ((WIDTH * GB_ROWS) / GB_COLS)
-#define TIMER_INTERVAL 0.5
+#define INITIAL_TIMER_INTERVAL 0.5
 
+static double timer_interval;
+static bool is_paused = false;
 
 static void window_initialized(GLFWwindow *window);
 static void render_window(void);
@@ -23,14 +25,17 @@ static void on_tick(void);
 
 static void window_initialized(GLFWwindow *window) {
 	glfwSetKeyCallback(window, on_key);
+	gb_init_game_board();
 	fg_new_figure();
-	timer_start(TIMER_INTERVAL, on_tick);
+	timer_interval = INITIAL_TIMER_INTERVAL;
+	gb_set_interval(INITIAL_TIMER_INTERVAL);
+	is_paused = false;
+	timer_start(timer_interval, on_tick);
 }
 
 static void render_window(void) {
 	timer_fire();
 	gb_render();
-	//cb_render();
 	fg_render();
 }
 
@@ -58,8 +63,44 @@ void on_key(GLFWwindow* window, int key, int scancode, int action, int mods) {
 	}
 
 	if (action == GLFW_PRESS || action == GLFW_REPEAT) {
-		if (!ge_handle_move(dx, dy, turn))
+		if (key == GLFW_KEY_P) {
+			if (is_paused) {
+				timer_start(timer_interval, on_tick);
+				printf("Game resumed.\n");
+			}
+			else {
+				timer_stop();
+				printf("Game paused.\n");
+			}
+			is_paused = !is_paused;
+		}
+		else if (key == GLFW_KEY_R) {
 			timer_stop();
+			int score = gb_get_score();
+			printf("Congratulations, you managed to clear %d rows! Final speed: %1.2f s/tick\n", score, timer_interval);
+			printf("Game restarting...\n");
+			ge_restart();
+			window_initialized(window);
+		}
+		else {
+			if (!is_paused) {
+				if (!ge_handle_move(dx, dy, turn)) {
+					timer_stop();
+					int score = gb_get_score();
+					is_paused = true;
+					printf("Congratulations, you managed to clear %d rows! Final speed: %1.2f s/tick\n", score, timer_interval);
+				}
+				else {
+					double new_interval = gb_get_interval();
+
+					if (new_interval < timer_interval) {
+						timer_interval = new_interval;
+						timer_stop();
+						timer_start(timer_interval, on_tick);
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -99,7 +140,7 @@ int main() {
 
 		glfwSwapBuffers(window);//push image to display
 		// glfwPollEvents();
-		glfwWaitEventsTimeout(TIMER_INTERVAL/5); //process all events of the application
+		glfwWaitEventsTimeout(timer_interval/5); //process all events of the application
 	}
 
 	glfwDestroyWindow(window);

@@ -20,7 +20,7 @@ typedef enum {
 	color_magenta = color_red   | color_blue,
 	color_cyan    = color_green | color_blue,
 	color_white   = color_red   | color_green | color_blue,
-	color_orange  = color_red   | color_green/2
+	color_orange  = color_red   | color_green / 2
 } color;
 
 typedef enum { I, O, T, L, J, S, Z} shape;
@@ -38,6 +38,11 @@ typedef struct {
 	block blocks[FIGURE_MAX_SIZE][FIGURE_MAX_SIZE];
 	shape figure_shape;
 } figure;
+
+typedef struct {
+	figure piece;
+	position translation;
+} rotation;
 
 extern void render_quad(const position pos, const color color);
 extern void render_block(const block block);

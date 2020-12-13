@@ -18,9 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="frequency_table.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="huffman_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -30,11 +27,14 @@
     <ClCompile Include="coding_token.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="text_coder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="frequency_table.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="huffman_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -42,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="coding_token.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text_coder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

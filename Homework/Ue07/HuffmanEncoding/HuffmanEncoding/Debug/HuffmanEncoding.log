@@ -1,2 +1,4 @@
-﻿  huffman_tree.cpp
+﻿  tables.cpp
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue07\HuffmanEncoding\HuffmanEncoding\tables.cpp(119,53): warning C4458: declaration of 'code' hides class member
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue07\HuffmanEncoding\HuffmanEncoding\tables.h(53,15): message : see declaration of 'coding_table_entry::code'
   HuffmanEncoding.vcxproj -> C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue07\HuffmanEncoding\Debug\HuffmanEncoding.exe

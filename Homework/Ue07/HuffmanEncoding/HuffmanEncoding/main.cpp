@@ -2,68 +2,33 @@
 #include <fstream>
 #include <string>
 #include <new>
-#include "huffman_list.h"
-#include "frequency_table.h"
-#include "huffman_tree.h"
+#include "text_coder.h"
+
 using namespace std;
 
 int main(int argc, char const* argv[]) {
-	auto e1 = new huffman_tree_node('A', 33);
-	auto e2 = new huffman_tree_node('N', 8);
-	auto e3 = new huffman_tree_node('R', 15);
-	auto e4 = new huffman_tree_node('C', 32);
-	auto e5 = new huffman_tree_node('D', 12);
-
-	auto ht1 = new huffman_tree();
-
-	ht1->insert_node(e1);
-	ht1->insert_node(e2);
-	ht1->insert_node(e3);
-	ht1->insert_node(e4);
-	ht1->insert_node(e5);
-
-	ht1->print();
-
-	/*auto e1 = new huffman_list_entry('A', 33);
-	auto e2 = new huffman_list_entry('N', 8);
-	auto e3 = new huffman_list_entry('R', 15);
-	auto e4 = new huffman_list_entry('C', 32);
-	auto e5 = new huffman_list_entry('D', 12);
-
-	auto hl1 = new huffman_list();
-
-	hl1->add_entry(e1);
-	hl1->add_entry(e2);
-	hl1->add_entry(e3);
-	hl1->add_entry(e4);
-	hl1->add_entry(e5);
-
-	hl1->print();*/
-
-	//frequency_table* table = new frequency_table();
-	//string line;
-	/*ifstream file(argv[1]);
-	if (file.is_open()) {
-		while (getline(file, line)) {
-			for (int i = 0; i < line.length(); i++) {
-				table->add_character(line[i]);
+	string line;
+	string text = "";
+	if (argc > 0) {
+		ifstream file("C:\\Users\\maxmi\\Documents\\FH\\SWO\\c-code\\Homework\\Ue07\\HuffmanEncoding\\Debug\\huge.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				text += line;
 			}
 		}
+	}
 
-		file.close();
-	}*/
+	text_coder coder;
 
-	//string line = "AACCCNNDDDAACCCCCRRAACCCCNNNADDDDDCCCAAACCNAAAAACCDDDDRRAAAANCCCRRAAAAARRRCCCCAARRAAAAAAACCCRRRRNCCC";
-	//for (int i = 0; i < line.length(); i++) {
-	//	table->add_character(line[i]);
-	//}
-	//
-	//table->update_table();
-	//table->print();
-	//
-	//huffman_list* list = new huffman_list(*table);
-	//
-	//list->print();
+	coder.set_text(text);
+
+	coder.encode();
+	coder.print_type(frequency_table);
+	coder.print_type(huffman_tree);
+	coder.print_type(huffman_list);
+	coder.print_type(coding_table);
+	coder.print_type(size_difference);
+	//coder.decode();
 
 	return 0;
 }

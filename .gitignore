@@ -42,6 +42,9 @@
 *.su
 *.idb
 *.pdb
+
+
+#VS
 *.ipch
 *.suo
 *.db
@@ -49,6 +52,7 @@
 *.tlog
 *.sbr
 *.DS_STORE
+*/.vs/*
 
 # Kernel Module Compile Results
 *.mod*

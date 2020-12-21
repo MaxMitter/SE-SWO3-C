@@ -43,16 +43,19 @@
 *.idb
 *.pdb
 
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
 
-#VS
-*.ipch
-*.suo
-*.db
-*.log
-*.tlog
-*.sbr
-*.DS_STORE
-*/.vs/*
+# Visual Studio 2015/2017 cache/options directory
+.vs/
 
 # Kernel Module Compile Results
 *.mod*

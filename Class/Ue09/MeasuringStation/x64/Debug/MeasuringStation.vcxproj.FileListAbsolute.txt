@@ -1,0 +1,2 @@
+C:\Users\maxmi\Documents\FH\SWO\c-code\Class\Ue09\MeasuringStation\x64\Debug\MeasuringStation.exe
+C:\Users\maxmi\Documents\FH\SWO\c-code\Class\Ue09\MeasuringStation\x64\Debug\MeasuringStation.pdb

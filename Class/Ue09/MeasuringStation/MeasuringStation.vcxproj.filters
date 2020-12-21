@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\actor.cpp">
+      <Filter>actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\broadcast_actor.cpp">
+      <Filter>actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pressure_sensor.cpp">
+      <Filter>sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sensor.cpp">
+      <Filter>sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\print_actor.cpp">
+      <Filter>actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\station.cpp">
+      <Filter>station</Filter>
+    </ClCompile>
+    <ClCompile Include="src\temperature_sensor.cpp">
+      <Filter>sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\measurement.cpp">
+      <Filter>measurement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threshold_filter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\actor.h">
+      <Filter>actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\broadcast_actor.h">
+      <Filter>actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\object.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\filter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pressure_sensor.h">
+      <Filter>sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sensor.h">
+      <Filter>sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\print_actor.h">
+      <Filter>actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\station.h">
+      <Filter>station</Filter>
+    </ClInclude>
+    <ClInclude Include="src\temperature_sensor.h">
+      <Filter>sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\measurement.h">
+      <Filter>measurement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\threshold_filter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="actors">
+      <UniqueIdentifier>{346ef6ca-6ac8-4312-8f1c-22c574f5d4ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filters">
+      <UniqueIdentifier>{91b5b1c6-631e-42ea-974d-15ddb2cae55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sensors">
+      <UniqueIdentifier>{b5c512cd-5ce1-4dde-a521-9d84c3268e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{336469c7-e712-48fb-bf72-96fd44661a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="station">
+      <UniqueIdentifier>{efe96784-c6ba-4eec-b4d3-cb9760cfaa28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="measurement">
+      <UniqueIdentifier>{4e36c3d2-05f8-47d6-8084-0f62cbbc1657}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

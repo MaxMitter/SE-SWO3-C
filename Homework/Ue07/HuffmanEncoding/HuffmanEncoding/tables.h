@@ -39,8 +39,7 @@ class frequency_table {
 
 class coding_table_entry {
 	public:	
-		coding_table_entry();
-		coding_table_entry(char car, std::string code);
+		coding_table_entry(char car = '\0', std::string code = "");
 
 		std::string get_code();
 		void set_char(char car);
@@ -66,5 +65,5 @@ class coding_table {
 		void print();
 	private:
 		coding_table_entry* table;
-		int size;
+		int length;
 };

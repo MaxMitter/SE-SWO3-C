@@ -8,27 +8,27 @@ using namespace std;
 
 int main(int argc, char const* argv[]) {
 	string line;
-	string text = "";
+	string text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	if (argc > 0) {
-		ifstream file("C:\\Users\\maxmi\\Documents\\FH\\SWO\\c-code\\Homework\\Ue07\\HuffmanEncoding\\Debug\\huge.txt");
+		/*ifstream file(argv[1]);
 		if (file.is_open()) {
 			while (getline(file, line)) {
 				text += line;
 			}
-		}
+		}*/
+		text_coder coder;
+
+		coder.set_text(text);
+
+		coder.encode();
+		coder.print_type(frequency_table);
+		coder.print_type(huffman_list);
+		coder.print_type(huffman_tree);
+		coder.print_type(coding_table);
+		coder.print_type(size_difference);
+		coder.decode();
+		coder.print_type(texts);
 	}
-
-	text_coder coder;
-
-	coder.set_text(text);
-
-	coder.encode();
-	coder.print_type(frequency_table);
-	coder.print_type(huffman_tree);
-	coder.print_type(huffman_list);
-	coder.print_type(coding_table);
-	coder.print_type(size_difference);
-	//coder.decode();
 
 	return 0;
 }

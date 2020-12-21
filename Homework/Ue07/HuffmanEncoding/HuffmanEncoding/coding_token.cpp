@@ -281,7 +281,7 @@ string coding_token::encode() {
 	return this->encoded_text;
 }
 
-std::string coding_token::decode() {
+string coding_token::decode() {
 	if (this->encoded_text == "") {
 		std::cout << "Text not encoded yet, please encode before trying to decode!" << std::endl;
 	} else {

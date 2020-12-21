@@ -46,7 +46,7 @@ bool text_coder::encode() {
 			auto ms = time_taken / std::chrono::milliseconds(1);
 			auto sec = floor(ms / 1000);
 			ms -= sec * 1000;
-			auto min = floor(sec / 1000);
+			auto min = floor(sec / 60);
 			sec -= min * 60;
 			std::cout << "Encoding took " << min << ":" << sec << "." << ms << " minutes." << std::endl;
 			return true;
@@ -70,9 +70,9 @@ bool text_coder::decode() {
 		auto ms = time_taken / std::chrono::milliseconds(1);
 		auto sec = floor(ms / 1000);
 		ms -= sec * 1000;
-		auto min = floor(sec / 1000);
+		auto min = floor(sec / 60);
 		sec -= min * 60;
-		std::cout << "Encoding took " << min << ":" << sec << "." << ms << " minutes." << std::endl;
+		std::cout << "Decoding took " << min << ":" << sec << "." << ms << " minutes." << std::endl;
 		return true;
 	}
 }

@@ -102,11 +102,6 @@ frequency_table_entry* frequency_table::get_table() {
 
 // ### Coding Table Entry ### //
 
-coding_table_entry::coding_table_entry() {
-	this->character = '\0';
-	this->code = "";
-}
-
 coding_table_entry::coding_table_entry(char car, std::string code) {
 	this->character = car;
 	this->code = code;
@@ -137,7 +132,7 @@ void coding_table_entry::print() {
 
 coding_table::coding_table(int size) {
 	this->table = new coding_table_entry[size];
-	this->size = size;
+	this->length = size;
 }
 
 coding_table::~coding_table() {
@@ -146,7 +141,7 @@ coding_table::~coding_table() {
 }
 
 void coding_table::add_entry(char car, std::string code) {
-	for (int i = 0; i < this->size; i++) {
+	for (int i = 0; i < this->length; i++) {
 		char cur_char = this->table[i].get_character();
 		if (cur_char == car || cur_char == '\0') {
 			table[i].set_char(car);
@@ -157,13 +152,13 @@ void coding_table::add_entry(char car, std::string code) {
 }
 
 void coding_table::print() {
-	for (int i = 0; i < this->size; i++) {
+	for (int i = 0; i < this->length; i++) {
 		this->table[i].print();
 	}
 }
 
 std::string coding_table::get_code(char car) {
-	for (int i = 0; i < this->size; i++) {
+	for (int i = 0; i < this->length; i++) {
 		if (this->table[i].get_character() == car)
 			return this->table[i].get_code();
 	}
@@ -173,7 +168,7 @@ std::string coding_table::get_code(char car) {
 }
 
 char coding_table::get_character(std::string code) {
-	for (int i = 0; i < this->size; i++) {
+	for (int i = 0; i < this->length; i++) {
 		if (this->table[i].get_code() == code)
 			return this->table[i].get_character();
 	}
@@ -183,7 +178,7 @@ char coding_table::get_character(std::string code) {
 }
 
 bool coding_table::is_valid_code(std::string code) {
-	for (int i = 0; i < this->size; i++) {
+	for (int i = 0; i < this->length; i++) {
 		if (this->table[i].get_code() == code)
 			return true;
 	}

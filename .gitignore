@@ -30,6 +30,7 @@
 
 # Executables
 *.exe
+*.exe.recipe
 *.out
 *.app
 *.i*86
@@ -41,6 +42,13 @@
 *.su
 *.idb
 *.pdb
+*.ipch
+*.suo
+*.db
+*.log
+*.tlog
+*.sbr
+*.DS_STORE
 
 # Kernel Module Compile Results
 *.mod*

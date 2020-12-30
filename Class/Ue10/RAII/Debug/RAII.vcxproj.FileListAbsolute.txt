@@ -1,0 +1,2 @@
+C:\Users\maxmi\Documents\FH\SWO\c-code\Class\Ue10\RAII\Debug\RAII.exe
+C:\Users\maxmi\Documents\FH\SWO\c-code\Class\Ue10\RAII\Debug\RAII.pdb

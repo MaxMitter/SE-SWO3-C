@@ -1,0 +1,2 @@
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue08\chess\Debug\chess.exe
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue08\chess\Debug\chess.pdb

@@ -16,6 +16,8 @@
 #include <cstddef>
 #include <initializer_list>
 #include <iterator>
+#include <iostream>
+#include <cassert>
 
 namespace swo {
 
@@ -126,59 +128,18 @@ template <typename T> class deque final {
 
       void swap (deque & other) noexcept;
 
+      void print();
+      void set_at(size_type at, T value);
+
       private:
           bool full();
+          size_type inc_deque_pointer(size_type* pointer);
+          size_type dec_deque_pointer(size_type* pointer);
 
-          value_type* m_data{};
           size_type m_size{};
           size_type m_front{};
           size_type m_back{};
+          size_type m_elements{};
+          value_type* m_data{};
 };
-
-    template <typename T>
-    deque<T>::deque() : deque<T> (10) { }
-
-    template <typename T>
-    deque<T>::deque(size_type count)
-        : deque <T> (count, T{} )
-    { }
-
-    template <typename T>
-    deque<T>::deque(size_type count, T const & value)
-        : m_size { count * 2 }
-        , m_data { new T[m_size] }
-        , m_front { 0 }
-        , m_back { 0 }
-    {
-        for (int i = 0; i < count; i++) {
-            if (value != T{})
-                m_data[m_front++] = T{ value };
-        }
-    }
-
-    template <typename T>
-    deque<T>::deque(std::initializer_list <T> init) 
-        : deque<T> (init.size())
-    { 
-        for (auto& e : init) {
-            push_front(e);
-        }
-    }
-
-    template <typename T>
-    deque<T>::~deque() {
-        delete[] m_data;
-    }
-
-    template <typename T>
-    void deque<T>::push_front(T const& value) {
-        if (!full()) {
-            m_data[m_front++] = T{ value };
-        }
-    }
-
-    template<typename T>
-    bool deque<T>::full() {
-        return (m_front >= m_size && m_back == 0);
-    }
 }   // namespace swo

@@ -1,0 +1,2 @@
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue09\deque\Debug\deque.exe
+C:\Users\maxmi\Documents\FH\SWO\c-code\Homework\Ue09\deque\Debug\deque.pdb

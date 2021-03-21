@@ -1,0 +1,6 @@
+C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/asteroids.dir
+C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/draw.dir
+C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/ml5/CMakeFiles/minilib.dir
+C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/ml5/CMakeFiles/ALL_BUILD.dir

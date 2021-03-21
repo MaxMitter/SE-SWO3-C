@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageMessage.cmake
+C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/ml5/CMakeLists.txt
+C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/share/glfw3/glfw3Config.cmake
+C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/share/glfw3/glfw3ConfigVersion.cmake
+C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/share/glfw3/glfw3Targets-debug.cmake
+C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/share/glfw3/glfw3Targets-release.cmake
+C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/share/glfw3/glfw3Targets.cmake

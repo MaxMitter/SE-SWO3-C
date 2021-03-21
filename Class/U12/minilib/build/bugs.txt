@@ -1,0 +1,4 @@
+Bekannte Bugs:
+	+ ast_window.on_init() wird 2 mal aufgerufen
+	+ starker performance abfall bei mehr als ~5 Objekten
+	

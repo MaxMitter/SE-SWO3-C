@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FCE3702D-2045-3E27-B8DE-A17DB294CE05}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>draw</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">draw.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">draw</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">draw.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">draw</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">draw.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">draw</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">draw.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">draw</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+powershell -noprofile -executionpolicy Bypass -file C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/Debug/draw.exe -installedDir C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\static\Debug\minilib.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\debug\lib\glfw3dll.lib;glu32.lib;opengl32.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\debug\lib\wxmsw31ud_gl.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\debug\lib\wxbase31ud.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\debug\lib\wxmsw31ud_core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/lib/static/Debug/draw.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/Debug/draw.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+powershell -noprofile -executionpolicy Bypass -file C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/Release/draw.exe -installedDir C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\static\Release\minilib.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\glfw3dll.lib;glu32.lib;opengl32.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxmsw31u_gl.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxbase31u.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxmsw31u_core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/lib/static/Release/draw.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/Release/draw.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+powershell -noprofile -executionpolicy Bypass -file C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/MinSizeRel/draw.exe -installedDir C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\static\MinSizeRel\minilib.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\debug\lib\glfw3dll.lib;glu32.lib;opengl32.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxmsw31u_gl.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxbase31u.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxmsw31u_core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/lib/static/MinSizeRel/draw.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/MinSizeRel/draw.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WXUSINGDLL;wxUSE_GUI=1;__WXMSW__;_CRT_SECURE_NO_WARNINGS;GLFW_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\ml5\inc;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\include;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\share\glfw3\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+powershell -noprofile -executionpolicy Bypass -file C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/RelWithDebInfo/draw.exe -installedDir C:/Users/maxmi/Documents/FH/SWO/c-code/SWO3_LIBS/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\static\RelWithDebInfo\minilib.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\debug\lib\glfw3dll.lib;glu32.lib;opengl32.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxmsw31u_gl.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxbase31u.lib;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\installed\x64-windows\lib\wxmsw31u_core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/lib/static/RelWithDebInfo/draw.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/bin/RelWithDebInfo/draw.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib -BC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build --check-stamp-file C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeSystem.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib -BC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build --check-stamp-file C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeSystem.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib -BC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build --check-stamp-file C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeSystem.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib -BC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build --check-stamp-file C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeCXXCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeRCCompiler.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\3.19.0\CMakeSystem.cmake;C:\Users\maxmi\Documents\FH\SWO\c-code\SWO3_LIBS\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\draw_application.h" />
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\draw_window.h" />
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\ellipse.h" />
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\line.h" />
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\main.cpp" />
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\rectangle.h" />
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\shape.h" />
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\text.h" />
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\triangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\ZERO_CHECK.vcxproj">
+      <Project>{013990C3-EB26-368D-81EC-0D020CA657EA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\build\ml5\minilib.vcxproj">
+      <Project>{79186586-DD08-3811-AFF3-163DC3C16913}</Project>
+      <Name>minilib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

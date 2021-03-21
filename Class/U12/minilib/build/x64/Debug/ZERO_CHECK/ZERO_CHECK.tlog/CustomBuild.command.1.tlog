@@ -1,0 +1,10 @@
+^C:\USERS\MAXMI\DOCUMENTS\FH\SWO\C-CODE\CLASS\U12\MINILIB\BUILD\CMAKEFILES\B6790EF48E9A04458CC6901AFDD7CE34\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib -BC:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/maxmi/Documents/FH/SWO/c-code/Class/U12/minilib/build/ML5.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

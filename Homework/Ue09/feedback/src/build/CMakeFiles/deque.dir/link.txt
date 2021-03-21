@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/deque.dir/deque/main.cpp.o  -o bin/deque  -lm 

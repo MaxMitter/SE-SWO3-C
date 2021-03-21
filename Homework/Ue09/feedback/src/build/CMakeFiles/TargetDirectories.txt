@@ -1,0 +1,3 @@
+/home/swo3/Homework/Ue09/feedback/src/build/CMakeFiles/rebuild_cache.dir
+/home/swo3/Homework/Ue09/feedback/src/build/CMakeFiles/edit_cache.dir
+/home/swo3/Homework/Ue09/feedback/src/build/CMakeFiles/deque.dir

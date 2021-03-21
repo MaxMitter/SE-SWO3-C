@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\draw_application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\draw_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\ellipse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\draw\src\triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxmi\Documents\FH\SWO\c-code\Class\U12\minilib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8A1103A8-EF45-3FBD-93B7-CCB4A7B5A012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BF342190-4D80-3086-A2EB-CDC2C1E4A376}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
